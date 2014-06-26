@@ -22,8 +22,8 @@ public class MainWeb extends javax.servlet.http.HttpServlet {
         board.setName("FirstBoard");
 
         writer.println("Element board was created");
-        writer.println(board);
 
+        writer.println(board);
         Collections.sort(board.getDevices(), Device.PRICE_COMPARATOR);
 
         writer.println("Board was sorted by price");
