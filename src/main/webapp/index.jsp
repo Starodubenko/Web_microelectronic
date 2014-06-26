@@ -5,5 +5,11 @@
 </head>
 <body>
     <h2>Hello microelectronic world !!!</h2>
+    ${Board}
+
+    <br /><br /><br />
+    ${header}
+    <br /><br /><br />
+    ${headerValues}
 </body>
 </html>

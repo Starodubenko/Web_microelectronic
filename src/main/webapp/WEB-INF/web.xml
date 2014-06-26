@@ -8,11 +8,11 @@
 
         <servlet>
             <servlet-name>MainWeb</servlet-name>
-            <servlet-class>star.servlet.MainWeb</servlet-class>
+            <servlet-class>star.servlet.Controller</servlet-class>
         </servlet>
 
         <servlet-mapping>
             <servlet-name>MainWeb</servlet-name>
-            <url-pattern>/micro</url-pattern>
+            <url-pattern>/</url-pattern>
         </servlet-mapping>
  </web-app>

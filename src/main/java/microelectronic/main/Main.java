@@ -2,7 +2,6 @@ package microelectronic.main;
 
 import microelectronic.entity.*;
 import microelectronic.factory.MicroelectronicFactory;
-import microelectronic.util.Comparator_Searcher;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -39,9 +38,9 @@ public class Main {
 
 
        // LOGGER.info("Search is coplete {}", SearchDevice.deviceSearch(board.getDevices(),Device.Type.CHIP, Device.ScMaterial.MANGANIN, 1, 100).toString());
-        LOGGER.info("Search is coplete "+board.getDevices().get(0).getPrice()+" "+ board.getDevices().get(1).getPrice()+" {}", Device.PRICE_COMPARATOR.compare(board.getDevices().get(0),board.getDevices().get(1)));
-        Collections.sort(board.getDevices(),Comparator_Searcher.COMPARATOR
-        );
-        LOGGER.info("Search is coplete {}", board);
+//        LOGGER.info("Search is coplete "+board.getDevices().get(0).getPrice()+" "+ board.getDevices().get(1).getPrice()+" {}", Device.PRICE_COMPARATOR.compare(board.getDevices().get(0),board.getDevices().get(1)));
+//        Collections.sort(board.getDevices(),Comparator_Searcher.COMPARATOR
+//        );
+//        LOGGER.info("Search is coplete {}", board);
     }
 }
