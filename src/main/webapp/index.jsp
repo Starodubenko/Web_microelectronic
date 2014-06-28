@@ -6,10 +6,7 @@
 <body>
     <h2>Hello microelectronic world !!!</h2>
     ${Board}
-
-    <br /><br /><br />
-    ${header}
-    <br /><br /><br />
-    ${headerValues}
+    <br><br><br><br>
+    ${Filtered_devices}
 </body>
 </html>

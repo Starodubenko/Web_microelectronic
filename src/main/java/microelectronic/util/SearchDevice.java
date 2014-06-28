@@ -87,15 +87,26 @@ public class SearchDevice {
 //
 //        List<Device> finishedArray = new ArrayList<>();
 //        for (Device device : originArray) {
-//            Device.ScMaterial firstScMaterial = device.getSemiconductorMaterial();
-//            if (firstScMaterial == scMaterial &&
-//                    device.getPrice().compareTo(BigDecimal.valueOf(startPrice)) >0 &&
-//                    device.getPrice().compareTo(BigDecimal.valueOf(finishPrice)) <0) {
-//                finishedArray.add(device);
-//            }
-//        }
-//        return finishedArray;
-//    }
+
+    public static List<Device> filterDevices(List<Device> originArray, Filter filter){
+
+        List<Device> result = new ArrayList<>();
+        for (Device device : originArray) {
+            if (filter.compareDevice(device)) {
+                result.add(device);
+            }
+        }
+        return result;
+    }
+
+    public static List<Device> deviceSearch(List<Device> originArray,Device.ScMaterial scMaterial, int startPrice, int finishPrice) {
+        List<Device> finishedArray = new ArrayList<>();
+        for (Device.Type type : Device.Type.values()) {
+            finishedArray.addAll(deviceSearch(originArray,type,scMaterial,startPrice,finishPrice));
+        }
+        return finishedArray;
+    }
+
 
     public static List<Device> deviceSearch(List<Device> originArray,Device.Type type,Device.ScMaterial scMaterial, int startPrice, int finishPrice){
 

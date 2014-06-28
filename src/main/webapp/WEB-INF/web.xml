@@ -7,12 +7,12 @@
         <display-name>Microelectronic app</display-name>
 
         <servlet>
-            <servlet-name>MainWeb</servlet-name>
+            <servlet-name>controller</servlet-name>
             <servlet-class>star.servlet.Controller</servlet-class>
         </servlet>
 
         <servlet-mapping>
-            <servlet-name>MainWeb</servlet-name>
-            <url-pattern>/</url-pattern>
+            <servlet-name>controller</servlet-name>
+            <url-pattern>/Micro</url-pattern>
         </servlet-mapping>
  </web-app>
