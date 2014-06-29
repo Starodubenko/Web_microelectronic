@@ -5,10 +5,6 @@ import java.util.Comparator;
 
 public abstract class Device implements Cloneable {
 
-    protected BigDecimal price;
-    protected ScMaterial semiconductorMaterial;
-    protected Type type;
-
     public static final Comparator<Device> SEMICONDUCTORMATERIAL_COMPARATOR = new Comparator<Device>() {
         @Override
         public int compare(Device o1, Device o2) {
@@ -27,6 +23,9 @@ public abstract class Device implements Cloneable {
         this.semiconductorMaterial = semiconductorMaterial;
         this.price = new BigDecimal(price);
     }
+    protected BigDecimal price;
+    protected ScMaterial semiconductorMaterial;
+    protected Type type;
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
@@ -47,6 +46,10 @@ public abstract class Device implements Cloneable {
 
     public Type getType() {
         return type;
+    }
+
+    public void setType(Type type) {
+        this.type = type;
     }
 
     public enum ScMaterial {

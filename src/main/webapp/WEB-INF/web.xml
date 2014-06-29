@@ -13,6 +13,6 @@
 
         <servlet-mapping>
             <servlet-name>controller</servlet-name>
-            <url-pattern>/Micro</url-pattern>
+            <url-pattern>/micro</url-pattern>
         </servlet-mapping>
  </web-app>

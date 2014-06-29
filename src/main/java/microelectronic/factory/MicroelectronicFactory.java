@@ -38,21 +38,25 @@ public class MicroelectronicFactory {
             switch (nameDevise) {
                 case "DIOD": {
                     device = createDiod();
+                    device.setType(Device.Type.DIOD);
                     newBoard.establishElement(device);
                 }
                 break;
                 case "TRANSISTOR": {
                     device = createTransistor();
+                    device.setType(Device.Type.TRANSISTOR);
                     newBoard.establishElement(device);
                 }
                 break;
                 case "CHIP": {
                     device = createChip();
+                    device.setType(Device.Type.CHIP);
                     newBoard.establishElement(device);
                 }
                 break;
                 case "RESISTOR": {
                     device = createResistor();
+                    device.setType(Device.Type.RESISTOR);
                     newBoard.establishElement(device);
                 }
                 break;
